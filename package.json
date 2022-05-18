@@ -1,0 +1,14 @@
+{
+  "name": "remi",
+  "version": "1.0.0",
+  "description": "practica 6",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "remi-team",
+  "license": "MIT",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  }
+}
