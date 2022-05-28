@@ -21,7 +21,7 @@ Una vez teniendo instalados los requisitos necesarios ahora si puede proceder a 
 * Por último, si desea ejecutar los tests desarrollados puede hacerlo ejecutando yarn test.
    
 
-## Authores
+## Autores
 
 - [Gandhi Salazar Cruz](https://github.com/Band-hi)
 - [Francisco Isaías Ballesteros Huerta](https://github.com/IsaHuerta23)
