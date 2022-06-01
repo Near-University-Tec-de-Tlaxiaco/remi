@@ -26,4 +26,4 @@ Una vez teniendo instalados los requisitos necesarios ahora si puede proceder a 
 - [Gandhi Salazar Cruz](https://github.com/Band-hi)
 - [Francisco Isaías Ballesteros Huerta](https://github.com/IsaHuerta23)
 - [Rigoberto Ramírez Nicolás](https://github.com/Rigoberto2001)
-- [Lizzete León González)](https://github.com/Lissete7)
+- [Lizzete León González](https://github.com/Lissete7)
