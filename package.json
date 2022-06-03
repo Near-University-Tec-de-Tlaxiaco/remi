@@ -4,7 +4,7 @@
   "description": "practica 6",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "asp"
   },
   "author": "remi-team",
   "license": "MIT",
