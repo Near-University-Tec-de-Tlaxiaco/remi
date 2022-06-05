@@ -1,11 +1,16 @@
-import { logging, PersistentUnorderedMap} from "near-sdk-as";
+import {u128, logging, PersistentUnorderedMap} from "near-sdk-as";
+import {ReseñarTodo, Reseñar} from "./model"
 
 export const reseñas = new PersistentUnorderedMap<string, string>("Reseñas");
 
+const indReseña = ReseñarTodo.length;
+
 //Método para guardar reseñas
-export function setReseña(id: string, reseña: string): void {
+export function setReseña(id: string, reseña: string): Reseñar {
+    const newRsñ = new Reseñar(id, reseña);
+    ReseñarTodo.push(newRsñ);
     logging.log("Nueva reseña publicada");
-    reseñas.set(id, reseña);
+    return newRsñ;
 }
 
 //Método para buscar reseñas
