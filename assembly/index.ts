@@ -35,3 +35,7 @@ export function deleteReseña(id: string): void{
     reseñas.delete(id);
 }
 
+//Metodo para obtener el numero de reseñas
+export function reseñaLenght(): number {
+    return ReseñarTodo.length;
+}
