@@ -1,12 +1,16 @@
-import {PersistentVector, u128} from "near-sdk-as";
+import {PersistentVector, u128, context} from "near-sdk-as";
 
-export class Reseñar{
-    id : String;
-    reseñas : String;
-    constructor(id : String,  reseñas : String){
-        this.id = id;
-        this.reseñas = reseñas;
-    } 
+export class Reseña{
+    titulo : String;
+    texto : String
+    calificacion : number;
+    autor : String;
+    constructor(titulo : String, texto : String, calificacion : number){
+        this.titulo = titulo;
+        this.texto = texto;
+        this.calificacion = calificacion;
+        this.autor = context.sender;
+    }
 }
 
-export const ReseñarTodo = new PersistentVector<Reseñar>("v")
+export const ReseñarTodo = new PersistentVector<Reseña>("v")
