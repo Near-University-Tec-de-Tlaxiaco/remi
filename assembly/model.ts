@@ -28,5 +28,24 @@ export class Usuario{
     }
 }
 
+export class Prestador{
+    nombrePrestador : String;
+    walletPrestador : String;
+    especialidad : String;
+    telefono : String;
+    direccion : String;
+    historial : String;
+    constructor(nombrePrestador : String,  walletPrestador : String, especialidad : String, telefono : String, 
+        direccion : String, historial : String){
+        this.nombrePrestador = nombrePrestador;
+        this.walletPrestador = walletPrestador;
+        this.especialidad = especialidad;
+        this.telefono = telefono;
+        this.direccion = direccion;
+        this.historial = historial;
+    }
+}
+
 export const ReseñarTodo = new PersistentVector<Reseña>("v");
 export const guardarUsuario = new PersistentVector<Usuario>("v");
+export const guardarPrestador = new PersistentVector<Prestador>("v");
