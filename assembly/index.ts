@@ -34,13 +34,20 @@ export function deleteReseña(reseñaIndice : i32): bool{
     return true;
 }
 
-//Método para buscar reseñas
-export function getReseña(id: string): string | null {
-    logging.log("Se ha encontrado una reseña");
-    return reseñas.get(id);
+//Metodo para obtener el numero de reseñas
+export function tamañoReseña(): number {
+    return guardarReseña.length;
 }
 
-//Metodo para obtener el numero de reseñas
-export function reseñaLenght(): number {
-    return ReseñarTodo.length;
+//Método para buscar reseñas
+export function getReseña(Buscar: String): Reseña {
+    const data = new Array<Reseña>(indReseña);
+    for(let i = 0; i < indReseña; i++) {
+        data[i] = guardarReseña[i];
+        if (data[i].titulo==Buscar) {
+            return guardarReseña[i];
+        }
+    }
+    logging.log("No se encontro el comentario")
+    return guardarReseña[indReseña+2];
 }
