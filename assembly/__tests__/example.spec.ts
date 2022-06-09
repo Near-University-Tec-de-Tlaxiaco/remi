@@ -14,10 +14,10 @@ describe("Publicar Reseña", () => {
     })
   })
 
-const resñaInd = ReseñarTodo.length;
-const data = new Array<Reseñar>(resñaInd);
+const resñaInd = guardarReseña.length;
+const data = new Array<Reseña>(resñaInd);
 for(let i=0; i < resñaInd; i++) {
-    data[i] = ReseñarTodo[i]
+    data[i] = guardarReseña[i]
 }
 
   describe("Obtener Reseña", () => {
