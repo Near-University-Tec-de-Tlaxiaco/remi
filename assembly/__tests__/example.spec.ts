@@ -1,13 +1,16 @@
 import {logging, PersistentVector} from "near-sdk-as";
-import {ReseñarTodo, Reseñar} from "../model"
-import {setReseña, getReseña, deleteReseña, reseñaLenght, getTodasReseñas} from ".."
-const id = '1';
-const reseñas = 'Excelente servicio, nunca habia recibido mejores muebles en mi vida';
-let nuevaReseña = new Reseñar(id, reseñas);
+import {guardarReseña, Reseña, guardarPrestador, Prestador, guardarUsuario, Usuario} from "../model"
+import {setReseña, getReseña, deleteReseña, tamañoReseña, getTodasReseñas} from ".."
+const titulo = 'Esplendido';
+const texto = 'Excelente servicio, nunca habia recibido mejores muebles en mi vida';
+const calificacion = 9;
+
+let reseñaEjemplo = new Reseña(titulo, texto, calificacion);
 
 describe("Publicar Reseña", () => {
     it('No se publico la reseña debido a un error', () => {
-        expect(setReseña('1', 'Excelente servicio, nunca habia recibido mejores muebles en mi vida')).toStrictEqual(nuevaReseña);
+        expect(setReseña('Esplendido', 'Excelente servicio, nunca habia recibido mejores muebles en mi vida', 9)).toStrictEqual
+        (reseñaEjemplo);
     })
   })
 
