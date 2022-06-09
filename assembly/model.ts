@@ -28,4 +28,5 @@ export class Usuario{
     }
 }
 
-export const ReseñarTodo = new PersistentVector<Reseña>("v")
+export const ReseñarTodo = new PersistentVector<Reseña>("v");
+export const guardarUsuario = new PersistentVector<Usuario>("v");
