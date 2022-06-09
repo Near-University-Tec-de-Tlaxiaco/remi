@@ -13,4 +13,19 @@ export class Reseña{
     }
 }
 
+export class Usuario{
+    nombre : String;
+    apellido : String;
+    email : String;
+    wallet : String;
+    necesidades : String;
+    constructor(nombre : String,  apellido : String, email : String, wallet : String, necesidades : String){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+        this.wallet = wallet;
+        this.necesidades = necesidades;
+    }
+}
+
 export const ReseñarTodo = new PersistentVector<Reseña>("v")
