@@ -46,6 +46,6 @@ export class Prestador{
     }
 }
 
-export const ReseñarTodo = new PersistentVector<Reseña>("v");
+export const guardarReseña = new PersistentVector<Reseña>("v");
 export const guardarUsuario = new PersistentVector<Usuario>("v");
 export const guardarPrestador = new PersistentVector<Prestador>("v");
