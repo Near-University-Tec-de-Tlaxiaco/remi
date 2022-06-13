@@ -14,31 +14,18 @@ export class Reseña{
 }
 
 export class Usuario{
-    nombre : String;
-    apellido : String;
-    email : String;
-    wallet : String;
-    necesidades : String;
-    constructor(nombre : String,  apellido : String, email : String, wallet : String, necesidades : String){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.wallet = wallet;
-        this.necesidades = necesidades;
+    usuario : String;
+    constructor(){
+        this.usuario = context.sender;
     }
 }
 
 export class Prestador{
-    nombrePrestador : String;
-    walletPrestador : String;
     especialidad : String;
     telefono : String;
     direccion : String;
     historial : String;
-    constructor(nombrePrestador : String,  walletPrestador : String, especialidad : String, telefono : String, 
-        direccion : String, historial : String){
-        this.nombrePrestador = nombrePrestador;
-        this.walletPrestador = walletPrestador;
+    constructor(especialidad : String, telefono : String, direccion : String, historial : String){
         this.especialidad = especialidad;
         this.telefono = telefono;
         this.direccion = direccion;

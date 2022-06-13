@@ -4,6 +4,7 @@ import {guardarReseña, Reseña, guardarPrestador, Prestador, guardarUsuario, Us
 export const reseñas = new PersistentUnorderedMap<string, string>("Reseñas");
 
 const indReseña = guardarReseña.length;
+const indUsuario = guardarUsuario.length;
 
 //Método para guardar reseñas
 export function setReseña(titulo : String, texto : String, calificacion : i32): Reseña {
@@ -50,4 +51,21 @@ export function getReseña(Buscar: String): Reseña {
     }
     logging.log("No se encontro el comentario")
     return guardarReseña[indReseña+2];
+}
+
+//Metodo para obtener usuarios
+export function getUsuarios(): Usuario[] {
+    const data = new Array<Usuario>(indUsuario);
+    for(let i = 0; i < indUsuario; i++) {
+        data[i] = guardarUsuario[i]
+    }
+    return data;
+}
+
+//Método para guardar prestadores
+export function setPrestador(especialidad : String, telefono : String, direccion : String, historial : String): Prestador {
+    const newPres = new Prestador(especialidad, telefono, direccion, historial);
+    guardarPrestador.push(newPres);
+    logging.log("Nuevo Prestador registrado");
+    return newPres;
 }
