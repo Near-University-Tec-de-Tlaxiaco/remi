@@ -18,7 +18,7 @@ Una vez teniendo instalados los requisitos necesarios ahora si puede proceder a 
 * Inicie sesión con su wallet de tesnet utilizando ``near login``.
 * Ejecute el comando ``yarn asb`` para compilar el contrato.
 * Para desplegar el contrato utilize la siguiente sintaxis ``near deploy --accountId (Cuenta de Testnet) --wasnFile build/release/remi.wasm``.
-* Con el código ``near call`` llame al método que desee ejecutar, a continuación se muestra un ejemplo llamando al método que permite ingresar una reseña: ``near call ejemplo.testnet setReseña '{"titulo":"Excelente servicio","texto":"El mueble se ve muy bien y también huele bien","calificacion":4}' --accountId issahuerta.testnet``.
+* Con el código ``near call`` llame al método que desee ejecutar, a continuación se muestra un ejemplo llamando al método que permite ingresar una reseña: ``near call ejemplo.testnet setReseña '{"titulo":"Excelente servicio","texto":"El mueble se ve muy bien y también huele bien","calificacion":4}' --accountId ejemplo.testnet``.
 
 
 ## Autores
