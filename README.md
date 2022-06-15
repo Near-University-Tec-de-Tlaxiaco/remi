@@ -15,10 +15,11 @@ Una vez teniendo instalados los requisitos necesarios ahora si puede proceder a 
 ## Despliegue e instalación.
 ---
 * Clone el repositorio con ``git clone`` https://github.com/Near-University-Tec-de-Tlaxiaco/remi 
-* Inicie sesión en su wallet que creó anteriormente con el código: near login.
-* Dentro del repositorio, instale las dependencias del proyecto ejecutando npm install.
-* Si quiere desplegar el contrato y probar sus funciones, puedes hacerlo con yarn deploy:dev esto le devolverá un conjunto de caracteres que empezarán por "dev-" seguido por numeros generados por la red.
-* Por último, si desea ejecutar los tests desarrollados puede hacerlo ejecutando yarn test.
+* Inicie sesión con su wallet de tesnet utilizando ``near login``.
+* Ejecute el comando ``yarn asb`` para compilar el contrato.
+* Para desplegar el contrato utilize la siguiente sintaxis ``near deploy --accountId (Cuenta de Testnet) --wasnFile build/release/remi.wasm``.
+* Con el código ``near call`` llame al método que desee ejecutar, a continuación se muestra un ejemplo para ingresar una reseña: ``near call ejemplo.testnet setReseña '{"titulo":"Excelente servicio","texto":"El mueble se ve muy bien y también huele bien","calificacion":4}' --accountId issahuerta.testnet``.
+
 
 ## Autores
 
