@@ -1,4 +1,4 @@
-# Smart Contract de REMI :briefcase:
+# Smart Contract REMI :briefcase:
 
 ## ¿Cómo desplejar este contrato inteligente?
 ---
